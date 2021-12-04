@@ -9,7 +9,7 @@ import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
 
-public class PongController {
+public class PongFXController {
 
     private Rectangle rightWall;
     private Rectangle leftWall;
@@ -30,9 +30,9 @@ public class PongController {
     private int scoreLeft = 0;
     private int scoreRight = 0;
 
-    public PongController(Rectangle rightWall, Rectangle leftWall, Rectangle northWall, Rectangle southWall, Rectangle red,
-                          Rectangle stickRight, Rectangle stickLeft,
-                          Circle circleBall, StackPane ground, Label pointsLeft, Label pointsRight) {
+    public PongFXController(Rectangle rightWall, Rectangle leftWall, Rectangle northWall, Rectangle southWall, Rectangle red,
+                            Rectangle stickRight, Rectangle stickLeft,
+                            Circle circleBall, StackPane ground, Label pointsLeft, Label pointsRight) {
         this.rightWall = rightWall;
         this.leftWall = leftWall;
         this.northWall = northWall;

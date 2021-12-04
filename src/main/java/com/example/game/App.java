@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 public class App extends Application {
     @Override
     public void start(Stage stage) {
-        Scene scene = new Scene(new Pong(), 700, 500);
+        Scene scene = new Scene(new PongFX(), 700, 500);
         stage.setTitle("PONG!");
         stage.setScene(scene);
         stage.show();

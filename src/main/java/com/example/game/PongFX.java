@@ -9,7 +9,7 @@ import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
 
-public class Pong extends BorderPane {
+public class PongFX extends BorderPane {
 
     private Rectangle rightWall;
     private Rectangle leftWall;
@@ -24,9 +24,9 @@ public class Pong extends BorderPane {
     private StackPane ground;
     private Label controllers;
 
-    private PongController controller;
+    private PongFXController controller;
 
-    public Pong() {
+    public PongFX() {
         //Inicialización de variables
         rightWall = new Rectangle();
         leftWall = new Rectangle();
@@ -96,6 +96,6 @@ public class Pong extends BorderPane {
 
         this.setCenter(ground);
 
-        controller = new PongController(rightWall, leftWall, northWall, southWall, red, stickRight, stickLeft, circleBall, ground, pointsLeft, pointsRight);
+        controller = new PongFXController(rightWall, leftWall, northWall, southWall, red, stickRight, stickLeft, circleBall, ground, pointsLeft, pointsRight);
     }
 }
